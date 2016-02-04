@@ -2,7 +2,7 @@ import pygame
 import glob
 import sys
 
-__DIRPATH = "/Users/claywebb/Desktop/images/" # Directory of Images
+__DIRPATH = "/home/pi/Images" # Directory of Images
 __WIDTH, __HEIGHT = 1920, 1080 # Screen resolution for scaling purposes
 __DELAY = 7000 # Time in Milliseconds (1000 ms = 1 second)
 
@@ -11,7 +11,7 @@ screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
 done = False
 
 
-imagePaths = glob.glob(__DIRPATH+"*.png") + glob.glob(__DIRPATH+"*.jpg")
+imagePaths = glob.glob(__DIRPATH+"*.png") + glob.glob(__DIRPATH+"*.jpg") + glob.glob(__DIRPATH+"*.JPG")
 
 print(imagePaths[:])
 
