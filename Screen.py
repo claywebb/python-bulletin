@@ -15,7 +15,7 @@ imagePaths = glob.glob(__DIRPATH+"*.png") + glob.glob(__DIRPATH+"*.jpg")
 
 print(imagePaths[:])
 
-del imagePaths[-1]
+#del imagePaths[-1]
 
 images = []
 
