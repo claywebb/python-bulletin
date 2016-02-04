@@ -13,11 +13,11 @@ done = False
 
 imagePaths = glob.glob(__DIRPATH+"*.png") + glob.glob(__DIRPATH+"*.PNG") + glob.glob(__DIRPATH+"*.jpg") + glob.glob(__DIRPATH+"*.JPG")
 
+imagePaths.sort()
+
 print(imagePaths[:])
 
 #del imagePaths[-1]
-
-imagePaths.sort()
 
 images = []
 
