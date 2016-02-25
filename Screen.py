@@ -13,6 +13,9 @@ screen = pygame.display.set_mode((0, 0), 0)
 done = False
 images = []
 
+os.system("rsync -avzr --delete pi@76.190.192.76:~/Images ~/")
+
+
 def getImages():
     imagePaths = []
     imagePaths = glob.glob(__DIRPATH+"*.png") + glob.glob(__DIRPATH+"*.PNG") + glob.glob(__DIRPATH+"*.jpg") + glob.glob(__DIRPATH+"*.JPG")
