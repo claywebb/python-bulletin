@@ -14,7 +14,7 @@ done = False
 images = []
 
 # os.system("rsync -avzr --delete pi@76.190.192.76:~/Images ~/")
-os.system("rsync -Pav -e 'ssh -i ~/.ssh/bulletin -C -c blowfish' eboard@76.190.192.76:~/Images %s" %(__DIRPATH))
+os.system('rsync -avzr --delete -e "ssh -i $HOME/.ssh/bulletin" eboard@76.190.192.76:~/Images %s' %(__DIRPATH))
 
 
 def getImages():
