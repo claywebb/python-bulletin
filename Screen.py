@@ -9,7 +9,7 @@ __WIDTH, __HEIGHT = 1920, 1080 # Screen resolution for scaling purposes
 __DELAY = 7000 # Time in Milliseconds (1000 ms = 1 second)
 
 pygame.init()
-screen = pygame.display.set_mode((0, 0), 0)
+screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
 done = False
 images = []
 
