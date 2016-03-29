@@ -10,6 +10,7 @@ __DELAY = 7000 # Time in Milliseconds (1000 ms = 1 second)
 
 pygame.init()
 screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+pygame.mouse.set_visible(0)
 done = False
 images = []
 
